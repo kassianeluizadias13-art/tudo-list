@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(196, 232, 255);
+     color:dimgray;
+     min-height: 100vh;
+     padding: 50px 20px; 
+}
+
+button, input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p{
+    color: #68738a;
+}
+
+.header-icon {
+    font-size: 40px;
+    color: deepskyblue;
+    background-color: rgb(218, 241, 255);
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.form-tarefa {
+    display: flex;
+    background-color: azure;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.form-tarefa input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 17px;
+}
+.form-tarefa button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    background-color:deepskyblue;
+    border: none;
+}
+
+.form-tarefa button:hover {
+    background-color:rgb(0, 171, 228);
+    transition: .2s;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.filtro {
+    padding: 10px 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: #68738a;
+    border: none;
+}
+.filtro:hover{
+    background-color: rgb(223, 240, 254);
+}
+
+.filtro-ativo:hover{
+    background-color: rgb(223, 240, 254);
+} 
+
+.filtro-ativo {
+     padding: 10px 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: #68738a;
+    border: none;
+    font-weight: bold ;
+}
+
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.tarefa {
+    display: flex;
+    flex-direction: row ;
+    gap: 15px;
+    background-color: azure;
+    padding: 18px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.tarefa-texto {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.tarefa-concluida .tarefa-texto {
+    text-decoration: line-through;
+    color: rgb(81, 100, 120);
+}
+.botao-check, .botao-excluir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: rgb(0, 171, 228);
+    border: none;
+}
+
+.botao-excluir:hover {
+    color:red
+}
+
+.tarefa-concluida, .botao-check {
+    
+}
